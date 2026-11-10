@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KOSÉRA | Fashion & Lifestyle</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:#fff;
+  color:#171717;
+  font-family:Arial,sans-serif;
+}
+header{
+  padding:22px 18px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:1px solid #eee;
+}
+.logo{
+  font-family:Georgia,serif;
+  font-size:29px;
+  letter-spacing:5px;
+}
+header span{font-size:13px;letter-spacing:2px}
+nav{
+  display:flex;
+  justify-content:center;
+  gap:23px;
+  padding:17px 5px;
+  border-bottom:1px solid #eee;
+  font-size:12px;
+  letter-spacing:1px;
+}
+.hero{
+  min-height:480px;
+  background:linear-gradient(130deg,#252525,#777,#222);
+  color:white;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:25px;
+}
+.hero p{letter-spacing:4px;font-size:11px}
+.hero h1{
+  font-family:Georgia,serif;
+  font-size:42px;
+  letter-spacing:5px;
+  margin:20px 0;
+}
+.hero button{
+  background:#d5c19a;
+  border:0;
+  padding:14px 28px;
+  margin-top:25px;
+  letter-spacing:2px;
+}
+section{padding:45px 18px}
+.heading{text-align:center;margin-bottom:30px}
+.heading h2{
+  font-family:Georgia,serif;
+  font-size:27px;
+  letter-spacing:2px;
+}
+.heading p{font-size:12px;color:#777;margin-top:10px}
+.categories{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:13px;
+}
+.category{
+  height:190px;
+  background:linear-gradient(140deg,#333,#999);
+  display:flex;
+  justify-content:center;
+  align-items:end;
+  padding:18px;
+  color:white;
+  font-family:Georgia,serif;
+  font-size:22px;
+}
+.category:nth-child(2){background:linear-gradient(140deg,#777,#222)}
+.category:nth-child(3){background:linear-gradient(140deg,#aaa,#444)}
+.category:nth-child(4){background:linear-gradient(140deg,#222,#888)}
+.products{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+}
+.product{
+  background:#f4f2ee;
+  padding-bottom:15px;
+  text-align:center;
+}
+.product .photo{
+  height:175px;
+  background:linear-gradient(140deg,#ddd,#999);
+}
+.product h3{font-size:14px;margin:12px 5px 5px}
+.product p{font-size:13px;color:#777}
+.product button{
+  margin-top:10px;
+  padding:9px 15px;
+  background:#171717;
+  color:white;
+  border:0;
+}
+footer{
+  background:#171717;
+  color:white;
+  padding:40px 20px;
+  text-align:center;
+}
+footer h2{
+  font-family:Georgia,serif;
+  letter-spacing:5px;
+  margin-bottom:15px;
+}
+footer p{font-size:12px;color:#bbb;line-height:2}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">KOSÉRA</div>
+  <span>☰ &nbsp; BAG (0)</span>
+</header>
+
+<nav>
+  <span>HOME</span>
+  <span>MEN</span>
+  <span>WOMEN</span>
+  <span>COLLECTIONS</span>
+</nav>
+
+<div class="hero">
+  <p>THE NEW FASHION EXPERIENCE</p>
+  <h1>STYLE BEYOND<br>ORDINARY</h1>
+  <p>MODERN FASHION. TIMELESS CULTURE.</p>
+  <button onclick="document.getElementById('collections').scrollIntoView()">
+    EXPLORE COLLECTION
+  </button>
+</div>
+
+<section id="collections">
+  <div class="heading">
+    <h2>OUR COLLECTIONS</h2>
+    <p>Discover your style</p>
+  </div>
+
+  <div class="categories">
+    <div class="category">MEN</div>
+    <div class="category">WOMEN</div>
+    <div class="category">SHOES</div>
+    <div class="category">ACCESSORIES</div>
+  </div>
+</section>
+
+<section>
+  <div class="heading">
+    <h2>FEATURED EDITION</h2>
+    <p>Curated fashion for modern living</p>
+  </div>
+
+  <div class="products">
+    <div class="product">
+      <div class="photo"></div>
+      <h3>Modern Outfit</h3>
+      <p>Coming Soon</p>
+      <button onclick="alert('Products launching soon!')">EXPLORE</button>
+    </div>
+
+    <div class="product">
+      <div class="photo"></div>
+      <h3>Classic Collection</h3>
+      <p>Coming Soon</p>
+      <button onclick="alert('Products launching soon!')">EXPLORE</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <h2>KOSÉRA</h2>
+  <p>MODERN FASHION · TIMELESS CULTURE</p>
+  <p>About Us | Contact | Instagram</p>
+  <p>© 2026 KOSÉRA. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
