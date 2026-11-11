@@ -1,195 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KOSÉRA | Fashion & Lifestyle</title>
-
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111"><title>KOSÉRA — Modern Fashion</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{
-  background:#fff;
-  color:#171717;
-  font-family:Arial,sans-serif;
-}
-header{
-  padding:22px 18px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  border-bottom:1px solid #eee;
-}
-.logo{
-  font-family:Georgia,serif;
-  font-size:29px;
-  letter-spacing:5px;
-}
-header span{font-size:13px;letter-spacing:2px}
-nav{
-  display:flex;
-  justify-content:center;
-  gap:23px;
-  padding:17px 5px;
-  border-bottom:1px solid #eee;
-  font-size:12px;
-  letter-spacing:1px;
-}
-.hero{
-  min-height:480px;
-  background:linear-gradient(130deg,#252525,#777,#222);
-  color:white;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  padding:25px;
-}
-.hero p{letter-spacing:4px;font-size:11px}
-.hero h1{
-  font-family:Georgia,serif;
-  font-size:42px;
-  letter-spacing:5px;
-  margin:20px 0;
-}
-.hero button{
-  background:#d5c19a;
-  border:0;
-  padding:14px 28px;
-  margin-top:25px;
-  letter-spacing:2px;
-}
-section{padding:45px 18px}
-.heading{text-align:center;margin-bottom:30px}
-.heading h2{
-  font-family:Georgia,serif;
-  font-size:27px;
-  letter-spacing:2px;
-}
-.heading p{font-size:12px;color:#777;margin-top:10px}
-.categories{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:13px;
-}
-.category{
-  height:190px;
-  background:linear-gradient(140deg,#333,#999);
-  display:flex;
-  justify-content:center;
-  align-items:end;
-  padding:18px;
-  color:white;
-  font-family:Georgia,serif;
-  font-size:22px;
-}
-.category:nth-child(2){background:linear-gradient(140deg,#777,#222)}
-.category:nth-child(3){background:linear-gradient(140deg,#aaa,#444)}
-.category:nth-child(4){background:linear-gradient(140deg,#222,#888)}
-.products{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:15px;
-}
-.product{
-  background:#f4f2ee;
-  padding-bottom:15px;
-  text-align:center;
-}
-.product .photo{
-  height:175px;
-  background:linear-gradient(140deg,#ddd,#999);
-}
-.product h3{font-size:14px;margin:12px 5px 5px}
-.product p{font-size:13px;color:#777}
-.product button{
-  margin-top:10px;
-  padding:9px 15px;
-  background:#171717;
-  color:white;
-  border:0;
-}
-footer{
-  background:#171717;
-  color:white;
-  padding:40px 20px;
-  text-align:center;
-}
-footer h2{
-  font-family:Georgia,serif;
-  letter-spacing:5px;
-  margin-bottom:15px;
-}
-footer p{font-size:12px;color:#bbb;line-height:2}
-</style>
-</head>
-
-<body>
-
-<header>
-  <div class="logo">KOSÉRA</div>
-  <span>☰ &nbsp; BAG (0)</span>
-</header>
-
-<nav>
-  <span>HOME</span>
-  <span>MEN</span>
-  <span>WOMEN</span>
-  <span>COLLECTIONS</span>
-</nav>
-
-<div class="hero">
-  <p>THE NEW FASHION EXPERIENCE</p>
-  <h1>STYLE BEYOND<br>ORDINARY</h1>
-  <p>MODERN FASHION. TIMELESS CULTURE.</p>
-  <button onclick="document.getElementById('collections').scrollIntoView()">
-    EXPLORE COLLECTION
-  </button>
-</div>
-
-<section id="collections">
-  <div class="heading">
-    <h2>OUR COLLECTIONS</h2>
-    <p>Discover your style</p>
-  </div>
-
-  <div class="categories">
-    <div class="category">MEN</div>
-    <div class="category">WOMEN</div>
-    <div class="category">SHOES</div>
-    <div class="category">ACCESSORIES</div>
-  </div>
-</section>
-
-<section>
-  <div class="heading">
-    <h2>FEATURED EDITION</h2>
-    <p>Curated fashion for modern living</p>
-  </div>
-
-  <div class="products">
-    <div class="product">
-      <div class="photo"></div>
-      <h3>Modern Outfit</h3>
-      <p>Coming Soon</p>
-      <button onclick="alert('Products launching soon!')">EXPLORE</button>
-    </div>
-
-    <div class="product">
-      <div class="photo"></div>
-      <h3>Classic Collection</h3>
-      <p>Coming Soon</p>
-      <button onclick="alert('Products launching soon!')">EXPLORE</button>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <h2>KOSÉRA</h2>
-  <p>MODERN FASHION · TIMELESS CULTURE</p>
-  <p>About Us | Contact | Instagram</p>
-  <p>© 2026 KOSÉRA. All Rights Reserved.</p>
-</footer>
-
-</body>
-</html>
+*{box-sizing:border-box}body{margin:0;background:#f6f4ef;color:#171717;font-family:Arial,sans-serif}.top{background:#111;color:#eee;text-align:center;padding:9px;font-size:10px;letter-spacing:2px}header{position:sticky;top:0;background:#f6f4eff2;border-bottom:1px solid #ddd;z-index:5}.nav{max-width:1100px;margin:auto;padding:17px;display:flex;justify-content:space-between;align-items:center}.logo{font:600 27px Georgia;letter-spacing:5px}.nav a{color:inherit;text-decoration:none;font-size:11px;letter-spacing:1px;margin:0 8px}.hero{max-width:1100px;margin:20px auto 0;min-height:480px;padding:50px;display:flex;align-items:end;color:white;background:linear-gradient(90deg,#000a,#0001),url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1600&q=80') center/cover}.hero h1{font:clamp(45px,8vw,78px)/.98 Georgia;margin:15px 0}.hero p{max-width:360px;line-height:1.7;font-size:13px}.eyebrow{font-size:10px;letter-spacing:3px;text-transform:uppercase}.btn{display:inline-block;background:#f6f1e8;color:#111;padding:14px 22px;text-decoration:none;font-size:10px;letter-spacing:2px;margin-top:12px}section{max-width:1100px;margin:auto;padding:58px 17px}h2{font:normal 38px Georgia;margin:10px 0 25px}.cats,.products{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.cat{height:220px;position:relative;overflow:hidden}.cat img{width:100%;height:100%;object-fit:cover}.cat b{position:absolute;bottom:0;left:0;right:0;padding:30px 12px 14px;color:white;font:22px Georgia;background:linear-gradient(transparent,#0009)}.tools{display:flex;gap:8px;margin:20px 0}.tools input,.tools select{padding:12px;border:1px solid #ddd;background:transparent}.tools input{flex:1;min-width:0}.photo{height:260px;background:#e5e1d8;position:relative}.photo img{width:100%;height:100%;object-fit:cover}.product h3{font:17px Georgia;margin:10px 0 5px}.product small{color:#777}.price{margin:9px 0;font-size:13px}.add{width:100%;padding:11px;background:transparent;border:1px solid #171717;font-size:10px;letter-spacing:1px}.story{background:#191919;color:#f6f1e8;text-align:center;max-width:none}.story p{max-width:600px;margin:auto;line-height:1.8;color:#ccc;font-size:13px}footer{background:#111;color:#eee;padding:35px 20px;font-size:11px}.drawer{display:none;position:fixed;inset:0;background:#0008;z-index:9}.drawer.show{display:block}.panel{background:#f6f4ef;margin-left:auto;width:min(390px,92%);height:100%;padding:22px;overflow:auto}.row{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid #ddd;font-size:12px}.note{font-size:11px;color:#777;line-height:1.6}@media(max-width:700px){.navlinks{display:none}.hero{margin:12px 12px 0;min-height:420px;padding:25px;background-position:58%}.cats,.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.cat{height:185px}.photo{height:55vw;max-height:250px}section{padding:42px 13px}h2{font-size:32px}}
+</style></head><body>
+<div class="top">A NEW EXPRESSION OF MODERN INDIAN STYLE</div>
+<header><div class="nav"><span class="logo">KOSÉRA</span><div class="navlinks"><a href="#collections">COLLECTIONS</a><a href="#featured">NEW ARRIVALS</a><a href="#story">OUR STORY</a></div><a href="javascript:openBag()">BAG (<span id="count">0</span>)</a></div></header>
+<div class="hero"><div><div class="eyebrow">CONTEMPORARY STYLE · INDIAN SPIRIT</div><h1>Wear your<br>own story.</h1><p>Curated fashion for modern living. Discover considered pieces, timeless details and a new point of view.</p><a class="btn" href="#featured">EXPLORE COLLECTION</a></div></div>
+<section id="collections"><div class="eyebrow">EXPLORE KOSÉRA</div><h2>Shop by category</h2><div class="cats">
+<a class="cat" href="#featured" onclick="choose('Men')"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80"><b>Men</b></a>
+<a class="cat" href="#featured" onclick="choose('Women')"><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=600&q=80"><b>Women</b></a>
+<a class="cat" href="#featured" onclick="choose('Shoes')"><img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80"><b>Shoes</b></a>
+<a class="cat" href="#featured" onclick="choose('Accessories')"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80"><b>Accessories</b></a></div></section>
+<section id="featured"><div class="eyebrow">THE EDIT</div><h2>Featured pieces</h2><div class="tools"><input id="search" placeholder="Search products..." oninput="render()"><select id="filter" onchange="render()"><option>All</option><option>Men</option><option>Women</option><option>Shoes</option><option>Watches</option><option>Accessories</option></select></div><div class="products" id="products"></div></section>
+<section class="story" id="story"><div class="eyebrow">THE KOSÉRA POINT OF VIEW</div><h2>Rooted in culture. Made for now.</h2><p>KOSÉRA is a concept for modern fashion shaped by individuality, thoughtful design and the richness of contemporary Indian identity. This is the beginning of our story.</p></section>
+<footer><div class="logo">KOSÉRA</div><p>Modern fashion. Distinct point of view.</p><p>© 2026 KOSÉRA · Website preview. Products and prices are illustrative.</p></footer>
+<div class="drawer" id="drawer" onclick="if(event.target===this)closeBag()"><div class="panel"><button onclick="closeBag()" style="float:right">CLOSE ✕</button><h2>Your bag</h2><div id="items"></div><h3 id="total">Subtotal ₹0</h3><p class="note">Preview only: checkout and payments are not connected. No order can be placed from this demo.</p></div></div>
+<script>
+const data=[
+[1,"The Everyday Overshirt","Men",1899,"https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=600&q=80","NEW"],
+[2,"Modern Essential Set","Women",2499,"https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80","EDIT"],
+[3,"Minimal Leather Sneakers","Shoes",3299,"https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80",""],
+[4,"Classic Timepiece","Watches",4599,"https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80","SIGNATURE"],
+[5,"Structured Everyday Bag","Accessories",2199,"https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80",""],
+[6,"Relaxed Weekend Look","Men",2799,"https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80",""],
+[7,"Contemporary Day Dress","Women",2999,"https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=600&q=80","NEW"],
+[8,"Everyday Statement Watch","Watches",3899,"https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=600&q=80",""]];
+let bag=[];
+function render(){let q=document.getElementById('search').value.toLowerCase(),c=document.getElementById('filter').value;let list=data.filter(p=>(c==='All'||p[2]===c)&&(p[1].toLowerCase().includes(q)||p[2].toLowerCase().includes(q)));document.getElementById('products').innerHTML=list.map(p=>`<article class="product"><div class="photo"><img src="${p[4]}" alt="${p[1]}" loading="lazy">${p[5]?`<small style="position:absolute;top:9px;left:9px;background:#f6f4ef;padding:7px">${p[5]}</small>`:''}</div><small>${p[2].toUpperCase()}</small><h3>${p[1]}</h3><div class="price">₹${p[3].toLocaleString('en-IN')}</div><button class="add" onclick="add(${p[0]})">ADD TO BAG</button></article>`).join('')||'<p>No matching products.</p>'}
+function choose(c){document.getElementById('filter').value=c;render()}
+function add(id){let p=data.find(x=>x[0]===id),found=bag.find(x=>x[0]===id);if(found)found[5]++;else bag.push([...p,1]);update();openBag()}
+function update(){document.getElementById('count').textContent=bag.reduce((s,p)=>s+p[5],0);document.getElementById('items').innerHTML=bag.length?bag.map(p=>`<div class="row"><span>${p[1]} × ${p[5]}</span><b>₹${(p[3]*p[5]).toLocaleString('en-IN')}</b></div>`).join(''):'<p class="note">Your bag is empty.</p>';document.getElementById('total').textContent='Subtotal ₹'+bag.reduce((s,p)=>s+p[3]*p[5],0).toLocaleString('en-IN')}
+function openBag(){document.getElementById('drawer').classList.add('show')}function closeBag(){document.getElementById('drawer').classList.remove('show')}
+render();update();
+</script></body></html>
